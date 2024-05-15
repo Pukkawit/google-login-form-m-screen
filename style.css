@@ -28,7 +28,7 @@ body {
 .profile-photo {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .outer-circle {
   width: 100px;
@@ -52,8 +52,8 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 60px;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(180deg, rgb(216, 216, 216), rgb(233, 233, 233)) border-box;
@@ -61,13 +61,28 @@ body {
   border-style: solid;
   border-color: transparent;
 }
-.avatar {
+.profile-pics {
   width: 30px;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.5;
+}
+input[type="file"] {
+  position: absolute;
+  left: 22px;
+  bottom: -10px;
+  opacity: 0;
+  width: 50px;
+}
+.edit-photo {
+  position: absolute;
+  left: 41px;
+  bottom: -10px;
+  width: 22px;
+  opacity: 0.25;
+  cursor: pointer;
 }
 .instruction {
   display: flex;

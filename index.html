@@ -27,11 +27,13 @@
         <div class="outer-circle">
           <div class="inner-circle">
             <img
-              class="avatar"
+              class="profile-pics"
               src="./icons/clarity--avatar-line.svg"
               alt="profile-avatar"
             />
           </div>
+          <img class="edit-photo" src="./icons/edit-tabler--edit.svg" alt="" />
+          <input type="file" name="" id="profile-pics-input" />
         </div>
       </div>
       <div class="instruction">
@@ -87,22 +89,6 @@
         </script>
       </p>
     </footer>
-    <script>
-      const password = document.querySelector(".password");
-      const revealPass = document.querySelector(".open");
-      const hidePass = document.querySelector(".close");
-
-      function hideShow() {
-        if (password.type === "password") {
-          password.type = "text";
-          revealPass.style.display = "flex";
-          hidePass.style.display = "none";
-        } else {
-          password.type = "password";
-          revealPass.style.display = "none";
-          hidePass.style.display = "flex";
-        }
-      }
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
